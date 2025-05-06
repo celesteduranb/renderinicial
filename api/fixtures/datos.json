@@ -1,0 +1,223 @@
+[
+    {
+      "model": "api.producto",
+      "pk": 1,
+      "fields": {
+        "nombre": "Brusqueta al Pomodoro",
+        "precio": "6.99",
+        "categoria": "Entradas",
+        "imagen": "imagenes/bruscheti.png",
+        "descripcion": "Pan crujiente con tomate fresco, ajo, albahaca y un toque de aceite de oliva."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 2,
+      "fields": {
+        "nombre": "Arancini",
+        "precio": "7.50",
+        "categoria": "Entradas",
+        "imagen": "imagenes/Aracini.png",
+        "descripcion": "Crujientes bolas de arroz rellenas de queso y ragú, empanizadas y fritas."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 3,
+      "fields": {
+        "nombre": "Carpaccio de Res",
+        "precio": "10.00",
+        "categoria": "Entradas",
+        "imagen": "imagenes/carpacio.png",
+        "descripcion": "Finas láminas de res con rúcula, queso parmesano y aderezo de limón."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 4,
+      "fields": {
+        "nombre": "Caponata Siciliana",
+        "precio": "7.00",
+        "categoria": "Entradas",
+        "imagen": "imagenes/caponata.png",
+        "descripcion": "Guiso tradicional de berenjena, tomate, aceitunas y alcaparras, con un toque agridulce."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 5,
+      "fields": {
+        "nombre": "Frittura di Calamari",
+        "precio": "9.00",
+        "categoria": "Entradas",
+        "imagen": "imagenes/calamari.png",
+        "descripcion": "Calamares fritos dorados y crujientes, acompañados de salsa alioli o marinara."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 6,
+      "fields": {
+        "nombre": "Peperoni Clásica",
+        "precio": "5.99",
+        "categoria": "Pizzas",
+        "imagen": "imagenes/pepperoni.png",
+        "descripcion": "Base de tomate, queso mozzarella y generosas rodajas de pepperoni."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 7,
+      "fields": {
+        "nombre": "Cuatro Quesos",
+        "precio": "6.50",
+        "categoria": "Pizzas",
+        "imagen": "imagenes/cuatro_quesos.png",
+        "descripcion": "Mezcla de mozzarella, parmesano, gorgonzola y provolone sobre masa artesanal."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 8,
+      "fields": {
+        "nombre": "Hawaiana Tropical",
+        "precio": "6.99",
+        "categoria": "Pizzas",
+        "imagen": "imagenes/hawaiana.png",
+        "descripcion": "Salsa de tomate, queso, jamón y piña caramelizada para un toque dulce."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 9,
+      "fields": {
+        "nombre": "Napolitana Tradicional",
+        "precio": "7.25",
+        "categoria": "Pizzas",
+        "imagen": "imagenes/napolitana.png",
+        "descripcion": "Masa delgada con salsa de tomate, mozzarella, albahaca fresca y un toque de aceite de oliva."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 10,
+      "fields": {
+        "nombre": "Queso con Tocienta",
+        "precio": "7.75",
+        "categoria": "Pizzas",
+        "imagen": "imagenes/queso_tocineta.png",
+        "descripcion": "Mozzarella derretida con crujientes trozos de tocineta ahumada."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 11,
+      "fields": {
+        "nombre": "Pollo BBQ Supreme",
+        "precio": "7.99",
+        "categoria": "Pizzas",
+        "imagen": "imagenes/pollo_bbq.png",
+        "descripcion": "Pollo marinado en salsa BBQ, cebolla caramelizada y queso mozzarella."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 12,
+      "fields": {
+        "nombre": "Queso con Carne Festín",
+        "precio": "8.50",
+        "categoria": "Pizzas",
+        "imagen": "imagenes/queso_carne.png",
+        "descripcion": "Mezcla de quesos con jugosa carne sazonada sobre una base de tomate."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 13,
+      "fields": {
+        "nombre": "Italiana Especial",
+        "precio": "8.25",
+        "categoria": "Pizzas",
+        "imagen": "imagenes/italiana.png",
+        "descripcion": "Tomates cherry, albahaca fresca, jamón serrano y mozzarella sobre masa fina."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 14,
+      "fields": {
+        "nombre": "Mexicana Picante",
+        "precio": "8.99",
+        "categoria": "Pizzas",
+        "imagen": "imagenes/mexicana.png",
+        "descripcion": "Chorizo, jalapeños, cebolla y queso mozzarella, con un toque picante."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 15,
+      "fields": {
+        "nombre": "Coca Cola Personal",
+        "precio": "2.25",
+        "categoria": "Bebidas",
+        "imagen": "imagenes/coca_cola.png",
+        "descripcion": "Refrescante gaseosa en presentación individual."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 16,
+      "fields": {
+        "nombre": "Jugo de Naranja",
+        "precio": "3.00",
+        "categoria": "Bebidas",
+        "imagen": "imagenes/jugo_naranja.png",
+        "descripcion": "Jugo natural recién exprimido, sin conservantes."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 17,
+      "fields": {
+        "nombre": "Limonada Refrescante",
+        "precio": "2.75",
+        "categoria": "Bebidas",
+        "imagen": "imagenes/limonada.png",
+        "descripcion": "Bebida de limón natural con el equilibrio perfecto de dulzura y acidez."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 18,
+      "fields": {
+        "nombre": "Vino Rojo",
+        "precio": "6.50",
+        "categoria": "Bebidas",
+        "imagen": "imagenes/vino_rojo.png",
+        "descripcion": "Selección de vino tinto con notas frutales y cuerpo equilibrado."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 19,
+      "fields": {
+        "nombre": "Cheesecake",
+        "precio": "3.99",
+        "categoria": "Postres",
+        "imagen": "imagenes/dessert1.png",
+        "descripcion": "Suave tarta de queso con base crujiente y cobertura de frutos rojos."
+      }
+    },
+    {
+      "model": "api.producto",
+      "pk": 20,
+      "fields": {
+        "nombre": "Brownie",
+        "precio": "2.99",
+        "categoria": "Postres",
+        "imagen": "imagenes/dessert2.png",
+        "descripcion": "Delicioso bizcocho de chocolate con una textura húmeda y un intenso sabor."
+      }
+    }
+  ]
+  
