@@ -5,12 +5,26 @@ from django.conf.urls.static import static
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("¡Hola! Esta es la página principal del backend, escribe /api/ al final de la URL para mejor visualización.")
+    return HttpResponse("¡Hola! Esta es la página principal del backend, escribe /api/ al final de la URL para mejor visualización de la app y /authors/ para conocer los desarrolladores.")
+
+from django.http import JsonResponse
+
+def authors(request):
+    data = {
+        "integrantes": [
+            {"nombre": "Ana Pérez", "código": "202412345"},
+            {"nombre": "Luis Gómez", "código": "202498765"},
+            # Agrega más integrantes aquí si es necesario
+        ]
+    }
+    return JsonResponse(data)
+
 
 urlpatterns = [
     path('', home), 
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),  
+    path('authors/', authors),  
 ]
 
 
