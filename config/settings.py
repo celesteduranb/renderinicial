@@ -13,9 +13,9 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import os
 import api
-import dj_database_url  # type: ignore
-from decouple import config  # type: ignore
-from dotenv import load_dotenv  # type: ignore
+import dj_database_url  
+from decouple import config 
+from dotenv import load_dotenv  
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,7 +29,8 @@ SECRET_KEY = 'django-insecure-f2y&-l@$k0*ga#o%ld@rs6naw+46(poxlt(wp8+uo*3o&nnax9
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
 # Ensure the correct ALLOWED_HOSTS value (replace with your app domain from Render)
-ALLOWED_HOSTS = ['renderinicial-8n3g.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'renderinicial-8n3g.onrender.com']
+
 
 
 # Application definition
