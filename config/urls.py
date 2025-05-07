@@ -2,8 +2,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("¡Hola! Esta es la página principal del backend, escribe /api/ al final de la URL para mejor visualización.")
 
 urlpatterns = [
+    path('', home), 
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),  
 ]
