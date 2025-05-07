@@ -29,7 +29,8 @@ SECRET_KEY = 'django-insecure-f2y&-l@$k0*ga#o%ld@rs6naw+46(poxlt(wp8+uo*3o&nnax9
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
 # Ensure the correct ALLOWED_HOSTS value (replace with your app domain from Render)
-ALLOWED_HOSTS = ['your-api.onrender.com']  # Replace with the correct domain from Render
+ALLOWED_HOSTS = ['renderinicial-8n3g.onrender.com']
+
 
 # Application definition
 INSTALLED_APPS = [
