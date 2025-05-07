@@ -12,9 +12,8 @@ from django.http import JsonResponse
 def authors(request):
     data = {
         "integrantes": [
-            {"nombre": "Ana Pérez", "código": "202412345"},
-            {"nombre": "Luis Gómez", "código": "202498765"},
-            # Agrega más integrantes aquí si es necesario
+            {"nombre": "Carmen Celeste Durán Báez", "código": "326045"},
+
         ]
     }
     return JsonResponse(data)
