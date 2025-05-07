@@ -12,9 +12,10 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
-from decouple import config
-from dotenv import load_dotenv
+import api
+import dj_database_url  # type: ignore
+from decouple import config  # type: ignore
+from dotenv import load_dotenv  # type: ignore
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,10 +28,10 @@ SECRET_KEY = 'django-insecure-f2y&-l@$k0*ga#o%ld@rs6naw+46(poxlt(wp8+uo*3o&nnax9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(' ') if not DEBUG else []
+# Ensure the correct ALLOWED_HOSTS value (replace with your app domain from Render)
+ALLOWED_HOSTS = ['your-api.onrender.com']  # Replace with the correct domain from Render
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -79,7 +80,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-# Database configuration
+# Database configuration (Make sure DATABASE_URL is set in your Render environment)
 DATABASES = {
     'default': dj_database_url.parse(config('DATABASE_URL', default=f'sqlite:///{BASE_DIR / "db.sqlite3"}'))
 }
