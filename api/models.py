@@ -42,7 +42,7 @@ class Pedido(models.Model):
     nombre = models.CharField(max_length=100)
     telefono = models.CharField(max_length=20)
     direccion = models.TextField()
-    total = models.DecimalField(max_digits=1000000, decimal_places=100000)
+    total = models.DecimalField(max_digits=10000, decimal_places=8)
     fecha = models.DateTimeField(auto_now_add=True)
     estado = models.CharField(max_length=20, default='pendiente')
 

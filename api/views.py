@@ -29,4 +29,3 @@ class PedidoViewSet(viewsets.ModelViewSet):
     filterset_fields = ['estado', 'nombre']
     renderer_classes = [NoHTMLFilterBrowsableAPIRenderer, JSONRenderer]
 
-
