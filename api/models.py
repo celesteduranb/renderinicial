@@ -12,7 +12,7 @@ class Producto(models.Model):
     nombre = models.CharField(max_length=100)
     precio = models.DecimalField(max_digits=6, decimal_places=2)
     categoria = models.CharField(max_length=20, choices=CATEGORIAS)
-    imagen = models.ImageField(upload_to='imagenes/')  
+    imagen = models.ImageField(upload_to='imagenes/', null=True, blank=True) 
     descripcion = models.TextField()
 
     def __str__(self):
@@ -42,8 +42,9 @@ class Pedido(models.Model):
     nombre = models.CharField(max_length=100)
     telefono = models.CharField(max_length=20)
     direccion = models.TextField()
-    total = models.DecimalField(max_digits=8, decimal_places=2)
+    total = models.DecimalField(max_digits=1000000, decimal_places=100000)
     fecha = models.DateTimeField(auto_now_add=True)
+    estado = models.CharField(max_length=20, default='pendiente')
 
     def __str__(self):
         return f"Pedido #{self.id} - {self.nombre}"
